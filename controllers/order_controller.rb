@@ -16,5 +16,4 @@ class Order
     chek_instetnce(book, Book)
     chek_instetnce(reader, Reader)
   end
-
 end
