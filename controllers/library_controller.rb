@@ -1,11 +1,8 @@
-require 'yaml'
-require_relative '../modules/database_module.rb'
-require_relative '../modules/statistic_module.rb'
-
 class Library
-  attr_accessor :authors, :books, :orders, :readers
-  include Database
+  attr_reader :authors, :books, :orders, :readers
   include Statistics
+  include Database
+  include ErrorsCatcher
 
   def initialize
     @books = []
@@ -15,16 +12,14 @@ class Library
     load_db
   end
 
-  def router(entity)
-    if entity.instance_of? Book
-      @books << entity
-    elsif entity.instance_of? Author
-      @authors << entity
-    elsif entity.instance_of? Reader
-      @readers << entity
-    elsif entity.instance_of? Order
-      @orders << entity
-    else 'Error entity'
+  def add(entity)
+    case entity
+    when Book then @books << entity
+    when Author then @authors << entity
+    when Reader then @readers << entity
+    when Order then @orders << entity
+    else
+      raise InstanceClassError
     end
   end
 end

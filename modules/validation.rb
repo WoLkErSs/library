@@ -1,15 +1,17 @@
 module Validation
+  include ErrorsCatcher
+
   private
 
-  def chek_instetnce(enty, klass)
-    raise puts 'EntyError' unless enty.instance_of? klass
+  def check_instance(entity, klass)
+    raise InstanceClassError unless entity.instance_of? klass
   end
 
-  def check_string(title)
-    raise puts 'EmptyString' if title.empty?
+  def check_string(entity)
+    raise EmptyStringError if entity.empty?
   end
 
-  def check_class(enty, klass)
-    raise puts 'ClassError' unless enty.is_a? klass
+  def check_class(entity, klass)
+    raise InputClassError unless entity.is_a? klass
   end
 end

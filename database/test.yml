@@ -197,4 +197,3 @@
     city: Dnipro
     street: Yavornickogo
     house: '19'
-  - !ruby/object:Reader {}

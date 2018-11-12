@@ -1,7 +1,5 @@
-require_relative '../modules/validation.rb'
-
 class Book
-  attr_accessor :title, :author
+  attr_reader :title, :author
   include Validation
 
   def initialize(title, author)
@@ -13,7 +11,7 @@ class Book
   private
 
   def verification(title, author)
-    chek_instetnce(author, Author)
+    check_instance(author, Author)
     check_string(title)
   end
 end

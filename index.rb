@@ -1,20 +1,12 @@
-require 'yaml'
-require_relative './controllers/author_controller.rb'
-require_relative './controllers/book_controller.rb'
-require_relative './controllers/reader_controller.rb'
-require_relative './controllers/library_controller.rb'
-require_relative './controllers/order_controller.rb'
-require_relative './controllers/author_controller.rb'
-require_relative './modules/statistic_module.rb'
+require_relative './autoload/autoload.rb'
 
 library = Library.new
 author = Author.new('Bulgakov', 'Bio Bio')
 book = Book.new('Ded Moroz', author)
-reader = Reader.new('VAAASYYAAA', '@lolo.com', 'Dnipro', 'Yavornickogo', 22)
+reader = Reader.new('LOlololo', '@lolo.com', 'Dnipro', 'Yavornickogo', 22)
 order = Order.new(book, reader)
 
-library.top_reader(2)
-library.most_popular_books(3)
-library.readers_the_most_popular_books(3)
-
+library.most_popular_books(library.orders, 2)
+library.top_reader(library.orders, 2)
 library.input_to_db(order)
+library.readers_the_most_popular_books(library.orders, 2)

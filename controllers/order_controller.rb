@@ -1,8 +1,5 @@
-require 'date'
-require_relative '../modules/validation.rb'
-
 class Order
-  attr_accessor :book, :reader, :date
+  attr_reader :book, :reader, :date
   include Validation
 
   def initialize(book, reader, date = Time.now)
@@ -13,7 +10,7 @@ class Order
   end
 
   def verification(book, reader)
-    chek_instetnce(book, Book)
-    chek_instetnce(reader, Reader)
+    check_instance(book, Book)
+    check_instance(reader, Reader)
   end
 end
