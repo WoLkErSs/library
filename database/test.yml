@@ -101,6 +101,10 @@
     date: 06/11/2018 10:53
   - !ruby/object:Order
     book: Shrek
+    reader: Saha
+    date: 06/11/2018 10:53
+  - !ruby/object:Order
+    book: Shrek
     reader: Erik
     date: 07/11/2018 10:11
   - !ruby/object:Order
@@ -119,6 +123,14 @@
     book: Ded Moroz
     reader: VAAASYYAAA
     date: 2018-11-08 17:47:38.986685273 +02:00
+  - !ruby/object:Order
+    book: Ded Moroz
+    reader: LOlololo
+    date: 2018-11-12 23:53:18.674206776 +02:00
+  - !ruby/object:Order
+    book: Ded Moroz
+    reader: LOlololo
+    date: 2018-11-12 23:53:25.098379516 +02:00
 - - !ruby/object:Reader
     name: Erik
     email: email@.com
