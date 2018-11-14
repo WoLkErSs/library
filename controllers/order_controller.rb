@@ -4,8 +4,8 @@ class Order
 
   def initialize(book, reader, date = Time.now)
     verification(book, reader)
-    @book = book.title
-    @reader = reader.name
+    @book = book
+    @reader = reader
     @date = date
   end
 
