@@ -5,7 +5,7 @@ class Book
   def initialize(title, author)
     verification(title, author)
     @title = title
-    @author = author.name
+    @author = author
   end
 
   private

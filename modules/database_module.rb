@@ -11,8 +11,17 @@ module Database
   end
 
   def input_to_db(entity)
-    add(entity)
-    entities = [@books, @authors, @orders, @readers]
+    entities = add(entity)
     File.open(PATH, 'w') { |f| f.write entities.to_yaml }
+  end
+
+  def add(entity)
+    case entity
+    when Book then @books << entity
+    when Author then @authors << entity
+    when Reader then @readers << entity
+    when Order then @orders << entity
+    else raise InstanceClassError
+    end
   end
 end
