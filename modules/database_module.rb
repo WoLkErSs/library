@@ -6,22 +6,11 @@ module Database
 
   def load_db
     entities = [Book, Reader, Author, Order, Time]
-    data = YAML.safe_load(File.open(PATH), entities, [], [], true)
-    data.each { |i| i.each { |y| add(y) } }
+    YAML.safe_load(File.open(PATH), entities, [], [], true)
   end
 
   def input_to_db(entity)
     entities = add(entity)
     File.open(PATH, 'w') { |f| f.write entities.to_yaml }
-  end
-
-  def add(entity)
-    case entity
-    when Book then @books << entity
-    when Author then @authors << entity
-    when Reader then @readers << entity
-    when Order then @orders << entity
-    else raise InstanceClassError
-    end
   end
 end

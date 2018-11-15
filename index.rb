@@ -1,3 +1,4 @@
+require 'pry'
 require_relative './autoload/autoload.rb'
 
 library = Library.new
