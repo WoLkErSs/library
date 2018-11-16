@@ -1,211 +1,49 @@
 ---
-- - !ruby/object:Book
-    title: Sammery
-    author: Harry
-  - !ruby/object:Book
-    title: Chistmas
-    author: Sherlok
-  - !ruby/object:Book
-    title: Adventure
-    author: Sherlok
-  - !ruby/object:Book
-    title: Shrek
-    author: Sherlok
-  - !ruby/object:Book
-    title: Chistmas
-    author: Sherlok
-  - !ruby/object:Book
-    title: Hou Hou
-    author: Sherlok
-  - !ruby/object:Book
-    title: Hou Hou
-    author: Lev Tolstiy
-  - !ruby/object:Book
-    title: Hou Hou
-    author: Lev Tolstiy
-  - !ruby/object:Book
-    title: Hou Hou
-    author: Lev Tolstiy
-  - !ruby/object:Book
-    title: Hou Hou
-    author: Lev Tolstiy
-  - !ruby/object:Book
-    title: Hou Hou
-    author: Lev Tolstiy
-  - !ruby/object:Book
-    title: Hou Hou
-    author: Lev Tolstiy
-  - !ruby/object:Book
-    title: Hou Hou
-    author: Lev Tolstiy
-  - !ruby/object:Book
-    title: Hou Hou
-    author: Lev Tolstiy
-- - !ruby/object:Author
-    name: Harry
-    biography: Bio Harry
-  - !ruby/object:Author
-    name: Sherlok
-    biography: Bio Shery
-  - !ruby/object:Author
-    name: Lev Tolstiy
-    biography: Bio Bio
-  - !ruby/object:Author
-    name: Lev Tolstiy
-    biography: Bio Bio
-  - !ruby/object:Author
-    name: Lev Tolstiy
-    biography: Bio Bio
-  - !ruby/object:Author
-    name: Lev Tolstiy
-    biography: Bio Bio
-  - !ruby/object:Author
-    name: Lev Tolstiy
-    biography: Bio Bio
-  - !ruby/object:Author
-    name: Lev Tolstiy
-    biography: Bio Bio
-  - !ruby/object:Author
-    name: Lev Tolstiy
-    biography: Bio Bio
-  - !ruby/object:Author
-    name: Lev Tolstiy
-    biography: Bio Bio
-  - !ruby/object:Author
-    name: Lev Tolstiy
-    biography: Bio Bio
-  - !ruby/object:Author
-    name: Lev Tolstiy
-    biography: Bio Bio
-  - !ruby/object:Author
-    name: Lev Tolstiy
-    biography: Bio Bio
-  - !ruby/object:Author
-    name: Bulgakov
-    biography: Bio Bio
-- - !ruby/object:Order
-    book: Adventure
-    reader: Erik
-    date: 05/11/2018 21:49
-  - !ruby/object:Order
-    book: Adventure
-    reader: Nastya
-    date: 05/11/2018 21:53
-  - !ruby/object:Order
-    book: Shrek
-    reader: Nastya
-    date: 06/11/2018 10:31
-  - !ruby/object:Order
-    book: Shrek
-    reader: Saha
-    date: 06/11/2018 10:53
-  - !ruby/object:Order
-    book: Shrek
-    reader: Saha
-    date: 06/11/2018 10:53
-  - !ruby/object:Order
-    book: Shrek
-    reader: Erik
-    date: 07/11/2018 10:11
-  - !ruby/object:Order
-    book: Harry Potter
-    reader: Saha
-    date: 07/11/2018 10:11
-  - !ruby/object:Order
-    book: Hou Hou
-    reader: Leha
-    date: 07/11/2018 13:44
-  - !ruby/object:Order
-    book: Hou Hou
-    reader: Leha
-    date: 07/11/2018 13:44
-  - !ruby/object:Order
-    book: Ded Moroz
-    reader: VAAASYYAAA
-    date: 2018-11-08 17:47:38.986685273 +02:00
-  - !ruby/object:Order
-    book: Ded Moroz
-    reader: LOlololo
-    date: 2018-11-12 23:53:18.674206776 +02:00
-  - !ruby/object:Order
-    book: Ded Moroz
-    reader: LOlololo
-    date: 2018-11-12 23:53:25.098379516 +02:00
-- - !ruby/object:Reader
-    name: Erik
-    email: email@.com
-    city: Dnipro
-    street: Yavornickogo
-    house: '19'
-  - !ruby/object:Reader
-    name: Saha
-    email: "@Gmsil.com"
-    city: Kiev
-    street: Gogoly
-    house: '46'
-  - !ruby/object:Reader
-    name: Leha
-    email: email@.com
-    city: Dnipro
-    street: Yavornickogo
-    house: '19'
-  - !ruby/object:Reader
-    name: Leha
-    email: email@.com
-    city: Dnipro
-    street: Yavornickogo
-    house: '19'
-  - !ruby/object:Reader
-    name: Leha
-    email: email@.com
-    city: Dnipro
-    street: Yavornickogo
-    house: '19'
-  - !ruby/object:Reader
-    name: Leha
-    email: email@.com
-    city: Dnipro
-    street: Yavornickogo
-    house: '19'
-  - !ruby/object:Reader
-    name: Leha
-    email: email@.com
-    city: Dnipro
-    street: Yavornickogo
-    house: '19'
-  - !ruby/object:Reader
-    name: Leha
-    email: email@.com
-    city: Dnipro
-    street: Yavornickogo
-    house: '19'
-  - !ruby/object:Reader
-    name: Leha
-    email: email@.com
-    city: Dnipro
-    street: Yavornickogo
-    house: '19'
-  - !ruby/object:Reader
-    name: Leha
-    email: email@.com
-    city: Dnipro
-    street: Yavornickogo
-    house: '19'
-  - !ruby/object:Reader
-    name: Leha
-    email: email@.com
-    city: Dnipro
-    street: Yavornickogo
-    house: '19'
-  - !ruby/object:Reader
-    name: PEEETTTYYYY
-    email: email@.com
-    city: Dnipro
-    street: Yavornickogo
-    house: '19'
-  - !ruby/object:Reader
-    name: VAAASYYAAA
-    email: "@lolo.com"
-    city: Dnipro
-    street: Yavornickogo
-    house: '19'
+- !ruby/object:Order
+  book: Adventure
+  reader: Erik
+  date: 05/11/2018 21:49
+- !ruby/object:Order
+  book: Adventure
+  reader: Nastya
+  date: 05/11/2018 21:53
+- !ruby/object:Order
+  book: Shrek
+  reader: Nastya
+  date: 06/11/2018 10:31
+- !ruby/object:Order
+  book: Shrek
+  reader: Saha
+  date: 06/11/2018 10:53
+- !ruby/object:Order
+  book: Shrek
+  reader: Saha
+  date: 06/11/2018 10:53
+- !ruby/object:Order
+  book: Shrek
+  reader: Erik
+  date: 07/11/2018 10:11
+- !ruby/object:Order
+  book: Harry Potter
+  reader: Saha
+  date: 07/11/2018 10:11
+- !ruby/object:Order
+  book: Hou Hou
+  reader: Leha
+  date: 07/11/2018 13:44
+- !ruby/object:Order
+  book: Hou Hou
+  reader: Leha
+  date: 07/11/2018 13:44
+- !ruby/object:Order
+  book: Ded Moroz
+  reader: VAAASYYAAA
+  date: 2018-11-08 17:47:38.986685273 +02:00
+- !ruby/object:Order
+  book: Ded Moroz
+  reader: LOlololo
+  date: 2018-11-12 23:53:18.674206776 +02:00
+- !ruby/object:Order
+  book: Ded Moroz
+  reader: LOlololo
+  date: 2018-11-12 23:53:25.098379516 +02:00

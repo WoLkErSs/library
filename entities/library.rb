@@ -10,8 +10,10 @@ class Library
     @authors = []
     @orders = []
     @readers = []
-    load_db.each { |i| i.each { |y| add(y) } }
+    load_db.flatten.each { |y| add(y) }
   end
+
+  private
 
   def add(entity)
     case entity

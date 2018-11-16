@@ -9,6 +9,8 @@ class Order
     @date = date
   end
 
+  private
+
   def verification(book, reader)
     check_instance(book, Book)
     check_instance(reader, Reader)
