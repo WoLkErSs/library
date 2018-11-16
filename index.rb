@@ -9,5 +9,5 @@ order = Order.new(book, reader)
 
 library.top_reader(2)
 library.most_popular_books(2)
-library.readers_the_most_popular_books(stata, 2)
+library.readers_the_most_popular_books(2)
 library.input_to_db(order)
