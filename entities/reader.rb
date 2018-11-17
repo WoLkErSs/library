@@ -16,7 +16,9 @@ class Reader
   private
 
   def verification(name, email, city, street, house)
-    [name, email, city, street].map { |x| check_class(x, String) }
+    [name, email, city, street].map { |x|
+      check_class(x, String)
+      check_string(x) }
     check_class(house, Integer)
   end
 end

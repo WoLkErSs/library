@@ -1,18 +1,14 @@
 module Statistics
-  def orders
-    self.orders
-  end
-
-  def top_reader(num = 1)
+  def top_readers(orders, num)
     counter(num, orders, :reader)
   end
 
-  def most_popular_books(num = 1)
+  def most_popular_books(orders, num)
     counter(num, orders, :book)
   end
 
-  def readers_the_most_popular_books(num = 3)
-    books = most_popular_books(num)
+  def readers_the_most_popular_books(orders, num)
+    books = most_popular_books(orders, num)
     orders.select { |order| books.include? order.book }.map(&:reader).uniq.count
   end
 
